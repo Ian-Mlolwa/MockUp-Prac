@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import PrimaryBtn from "@components/buttons/PrimaryBtn.astro";
+import SecondaryBtn from "@components/buttons/SecondaryBtn.astro";
+import heroImg from "@images/heroImg.png";
+---
+
+<section class="relative ml-[165px] justify-center m-auto">
+  <side class="flex">
+    <side class="mt-[243px]">
+      <h1 class="font-medium text-50">
+        Introduce Your Product Quickly & Effectively
+      </h1>
+      <p class="font-normal text-18">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim.
+      </p>
+
+      <PrimaryBtn>Purchase UI Kit</PrimaryBtn>
+      <SecondaryBtn>Learn More</SecondaryBtn>
+    </side>
+    <Image
+      src={heroImg}
+      alt="Hero group image"
+      class="w-[974.86px] h-[780px] mt-[185px]"
+    />
+  </side>
+</section>

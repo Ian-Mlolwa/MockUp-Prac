@@ -1,0 +1,31 @@
+---
+import PrimaryBtn from "@components/buttons/PrimaryBtn.astro";
+
+const navItems = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "about",
+  },
+  {
+    name: "Contact",
+    href: "contact",
+  },
+];
+---
+
+<!-- Desktop NavBar -->
+<nav class="py-[18px] px-[165px] relative">
+  <ul class="flex justify-between">
+    <li class="flex flex-wrap gap-16">
+      {navItems.map((navItem) => <a href={navItem.href}>{navItem.name}</a>)}
+    </li>
+    <li class="text-landingText font-black text-26">Landing</li>
+    <li>
+      <PrimaryBtn>Buy Now</PrimaryBtn>
+    </li>
+  </ul>
+</nav>
