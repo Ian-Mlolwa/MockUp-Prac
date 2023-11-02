@@ -1,6 +1,8 @@
 ---
 import PrimaryBtn from "@components/buttons/PrimaryBtn.astro";
 
+const { text = "Buy Now" } = Astro.props;
+
 const navItems = [
   {
     name: "Home",
@@ -24,8 +26,8 @@ const navItems = [
       {navItems.map((navItem) => <a href={navItem.href}>{navItem.name}</a>)}
     </li>
     <li class="text-landingText font-black text-26">Landing</li>
-    <li>
-      <PrimaryBtn>Buy Now</PrimaryBtn>
+    <li class="text-[12px]">
+      <PrimaryBtn text={text} classes="w-[160px] h-[26px]" />
     </li>
   </ul>
 </nav>

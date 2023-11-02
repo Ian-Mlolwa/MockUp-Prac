@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import PrimaryBtn from "@components/buttons/PrimaryBtn.astro";
 import SecondaryBtn from "@components/buttons/SecondaryBtn.astro";
 import heroImg from "@images/heroImg.png";
+
+const { text1 = "Purchase UI Kit", text2 = "Learn More" } = Astro.props;
 ---
 
 <section class="relative ml-[165px] justify-center m-auto">
@@ -11,16 +13,19 @@ import heroImg from "@images/heroImg.png";
       <h1 class="font-medium text-50">
         Introduce Your Product Quickly & Effectively
       </h1>
-      <p class="font-normal text-18">
+      <p class="font-normal text-18 mt-[20px] mb-[69px]">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
         dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis,
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim.
       </p>
-
-      <PrimaryBtn>Purchase UI Kit</PrimaryBtn>
-      <SecondaryBtn>Learn More</SecondaryBtn>
+      <i class="text-[16px] w-[189.13px] h-[36px]">
+        <PrimaryBtn text={text1} , classes="w-[189.13px] h-[36px]" />
+      </i>
+      <i class="text-[16px] ml-[30.15px]">
+        <SecondaryBtn text={text2} />
+      </i>
     </side>
     <Image
       src={heroImg}

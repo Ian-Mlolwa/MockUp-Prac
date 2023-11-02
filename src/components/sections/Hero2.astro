@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import iconImg from "@images/iconImg.png";
+import hero2Img from "@images/hero2Img.png";
+---
+
+<section class="relative ml-[165px] justify-center m-auto">
+  <side class="flex">
+    <side class="mt-[243px]">
+      <h1 class="font-medium text-50">Light, Fast & Powerful</h1>
+      <p class="font-normal text-18 mt-[20px] mb-[69px]">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim.
+      </p>
+      <div class="flex flex-row">
+        <hgroup>
+          <Image src={iconImg} alt="Picture logo" />
+          <h2 class="font-medium text-[16px] leading-[26px]">
+            Title Goes Here
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor.
+          </p>
+        </hgroup>
+        <hgroup>
+          <Image src={iconImg} alt="Picture logo" />
+          <h2>Title Goes Here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor.
+          </p>
+        </hgroup>
+      </div>
+    </side>
+    <Image
+      src={hero2Img}
+      alt="Hero group image"
+      class="w-[974.86px] h-[780px] mt-[185px]"
+    />
+  </side>
+</section>
