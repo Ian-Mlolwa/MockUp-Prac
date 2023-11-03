@@ -8,7 +8,9 @@ export default {
 			"landingText": "#37447E",
 			"white": "#ffffff",
 			"pricingBg": "#E7ECFF",
-			"textColor": "#222F65"
+			"textColor": "#222F65",
+			"h1Color": "#091133",
+			"footerBg": "#E7ECFF"
 		},
 		fontSize: {
 			"50": "50px",

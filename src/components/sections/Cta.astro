@@ -1,24 +1,28 @@
 ---
 import { Image } from "astro:assets";
 import ctaImg from "@images/ctaImg.png";
+import PrimaryBtn from "@components/buttons/PrimaryBtn.astro";
+
+const { text = "Purchase Now" } = Astro.props;
 ---
 
-<section class="relative ml-[165px] justify-center m-auto">
-  <side class="flex">
+<section class="relative ml-[165px] justify-center m-auto mt-[243px]">
+  <side class="flex gap-[172px]">
     <Image
       src={ctaImg}
       alt="Hero group image"
-      class="w-[445px] h-[312px] mt-[185px]"
+      class="flex-1 w-[445px] h-[312px]"
     />
-    <side class="mt-[243px]">
-      <h1 class="font-medium text-50">Light, Fast & Powerful</h1>
-      <p class="font-normal text-18 mt-[20px] mb-[69px]">
+    <side class="flex-1 mb-[69px]">
+      <h1 class="font-medium text-50 text-h1Color">Light, Fast & Powerful</h1>
+      <p class="font-normal text-18 mt-[20px] mb-[40px]">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
         dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis,
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim.
       </p>
+      <PrimaryBtn text={text} classes="w-[150px] h-[32px]" />
     </side>
   </side>
 </section>

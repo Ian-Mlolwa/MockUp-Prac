@@ -8,9 +8,9 @@ const { text1 = "Purchase UI Kit", text2 = "Learn More" } = Astro.props;
 ---
 
 <section class="relative ml-[165px] justify-center m-auto">
-  <side class="flex">
-    <side class="mt-[243px]">
-      <h1 class="font-medium text-50">
+  <side class="flex gap-[91.88px]">
+    <side class="flex-1 mt-[243px]">
+      <h1 class="font-medium text-50 text-h1Color">
         Introduce Your Product Quickly & Effectively
       </h1>
       <p class="font-normal text-18 mt-[20px] mb-[69px]">
@@ -20,17 +20,17 @@ const { text1 = "Purchase UI Kit", text2 = "Learn More" } = Astro.props;
         ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
         quis enim.
       </p>
-      <i class="text-[16px] w-[189.13px] h-[36px]">
+      <i class="flex-col space-x-[30.02px] text-[16px] w-[189.13px] h-[36px]">
         <PrimaryBtn text={text1} , classes="w-[189.13px] h-[36px]" />
-      </i>
-      <i class="text-[16px] ml-[30.15px]">
         <SecondaryBtn text={text2} />
       </i>
     </side>
-    <Image
-      src={heroImg}
-      alt="Hero group image"
-      class="w-[974.86px] h-[780px] mt-[185px]"
-    />
+    <side class="flex-1">
+      <Image
+        src={heroImg}
+        alt="Hero group image"
+        class="w-[974.86px] h-[780px] mt-[185px]"
+      />
+    </side>
   </side>
 </section>

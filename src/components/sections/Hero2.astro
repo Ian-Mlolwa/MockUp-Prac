@@ -5,20 +5,23 @@ import hero2Img from "@images/hero2Img.png";
 ---
 
 <section class="relative ml-[165px] justify-center m-auto">
-  <side class="flex">
-    <side class="mt-[243px]">
-      <h1 class="font-medium text-50">Light, Fast & Powerful</h1>
-      <p class="font-normal text-18 mt-[20px] mb-[69px]">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim.
-      </p>
-      <div class="flex flex-row">
+  <div class="flex space-x-[30px]">
+    <div class="flex-1 space-y-[80px] mt-[243px]">
+      <div class="space-y-[16px]">
+        <h1 class="font-medium text-50 text-h1Color">Light, Fast & Powerful</h1>
+        <p class="font-normal text-18 mt-[20px] mb-[69px]">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec
+          quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim.
+        </p>
+      </div>
+
+      <div class="flex">
         <hgroup>
-          <Image src={iconImg} alt="Picture logo" />
-          <h2 class="font-medium text-[16px] leading-[26px]">
+          <Image src={iconImg} alt="Picture logo" class="w-[255px] h-[36px]s" />
+          <h2 class="font-medium text-[16px] leading-[26px] text-h1Color">
             Title Goes Here
           </h2>
           <p>
@@ -28,18 +31,22 @@ import hero2Img from "@images/hero2Img.png";
         </hgroup>
         <hgroup>
           <Image src={iconImg} alt="Picture logo" />
-          <h2>Title Goes Here</h2>
+          <h2 class="font-medium text-[16px] leading-[26px] text-h1Color">
+            Title Goes Here
+          </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor.
           </p>
         </hgroup>
       </div>
-    </side>
-    <Image
-      src={hero2Img}
-      alt="Hero group image"
-      class="w-[540px] h-[524.31px] mt-[185px]"
-    />
-  </side>
+    </div>
+    <div class="flex-1">
+      <Image
+        src={hero2Img}
+        alt="Hero group image"
+        class="w-[540px] h-[524.31px] mt-[185px]"
+      />
+    </div>
+  </div>
 </section>

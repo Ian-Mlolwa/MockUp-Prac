@@ -1,5 +1,6 @@
 ---
 import PrimaryBtn from "@components/buttons/PrimaryBtn.astro";
+import Footer from "@components/footer/Footer.astro";
 
 const { text = "Purchase Now" } = Astro.props;
 ---
@@ -15,9 +16,10 @@ const { text = "Purchase Now" } = Astro.props;
     parturient montes, nascetur ridiculus
   </p>
   <h2 class="font-medium text-[50px] leading-[66px] text-textColor">$40</h2>
-  <span>UI Design Kit</span><br>
-  <span>See, One price. Simple.</span><br>
+  <span>UI Design Kit</span><br />
+  <span>See, One price. Simple.</span><br />
   <PrimaryBtn text={text} classes="w-[189px] h-[31.81px]" />
+  <Footer />
 </section>
 
 <style>
