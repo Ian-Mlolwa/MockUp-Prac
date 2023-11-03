@@ -1,0 +1,28 @@
+---
+import PrimaryBtn from "@components/buttons/PrimaryBtn.astro";
+
+const { text = "Purchase Now" } = Astro.props;
+---
+
+<div class="relative rounded-full bg-white -mb-5 z-10"></div>
+<section class="bg-pricingBg text-center absolute">
+  <h1 class="mt-[247.61px] font-medium text-[36px] leading-[48px]">
+    A Price To Suit Everyone
+  </h1>
+  <p class="text-[16px]">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+    parturient montes, nascetur ridiculus
+  </p>
+  <h2 class="font-medium text-[50px] leading-[66px] text-textColor">$40</h2>
+  <span>UI Design Kit</span><br>
+  <span>See, One price. Simple.</span><br>
+  <PrimaryBtn text={text} classes="w-[189px] h-[31.81px]" />
+</section>
+
+<style>
+  div {
+    height: 50px;
+    border-radius: 100%;
+  }
+</style>

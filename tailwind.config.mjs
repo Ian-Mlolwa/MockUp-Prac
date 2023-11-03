@@ -7,6 +7,8 @@ export default {
 			"primaryBtn-blue": "#111B47",
 			"landingText": "#37447E",
 			"white": "#ffffff",
+			"pricingBg": "#E7ECFF",
+			"textColor": "#222F65"
 		},
 		fontSize: {
 			"50": "50px",
